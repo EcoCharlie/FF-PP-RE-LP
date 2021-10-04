@@ -6,6 +6,7 @@
 
 body {
     font-family:'Roboto Slab';
+    
 }
 
 .contenedor {
@@ -86,6 +87,7 @@ header {
     width: 40%;
 }
 
+
 /* Galeria */
 .galeria{
     background: rgb(151, 153, 156);  
@@ -109,7 +111,7 @@ header {
     object-fit: cover;
     margin-bottom: 20px;
     display: block;
-    box-shadow: 0 0 3px 0 rgba(0, 0, 0, .5);
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .5);
     cursor: pointer;
     overflow: hidden;
 }
@@ -195,6 +197,44 @@ header {
     text-align: center;
     color: white;
 }
+
+/* Plans */
+.content-cards{
+    display:flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+  }  
+  .card{
+    width: 30%;
+    text-align: center;
+    height: 330px;
+    box-shadow: 0 0 3px 0 rgba(245, 5, 5, 0.5);
+    transform: scale(1);
+    transition: transform 0.6s;
+    padding: 10px;
+    margin-bottom: 30px;
+  }
+  .card h3{
+    margin: 30px 0 10px 0;
+    color: rgb(175, 30, 74);
+    font-size: 30px;
+  }
+  .card:hover{
+    box-shadow: 0 0 7px 0 rgba(226, 57, 66, 0.5);
+    transform: scale(1.03);
+    cursor: pointer;
+  }
+  .card ul{
+    font-weight: 300;
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding: 30px;
+  }
+  .cards-contenedor h2{
+  padding: 20px;
+  }
 
 /* Footer */
 
